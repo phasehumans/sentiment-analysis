@@ -33,6 +33,8 @@ It is built using **Flask**, **TextBlob**, and the **YouTube Data API**, providi
 ## Screenshots
 
 ### Phase- I
-![Home Page](image.png)
+![image](https://github.com/user-attachments/assets/5fd37c2a-ae5f-4d5e-a5e9-ec9966d625a8)
 
-![Result Page](image-1.png)
+![image](https://github.com/user-attachments/assets/8c858b44-01da-4611-89df-d1b7b0d6c282)
+
+
