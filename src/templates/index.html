@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT CSA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="big-heading">
+        <h1>YouTube Comment Sentiment Analysis</h1>
+    </header>
+
+
+    <div class="container">
+        <form method="POST">
+            <input type="text" name="youtube_link" placeholder="Enter YouTube Video Link" required>
+            <button type="submit">Submit</button>
+        </form>
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+
+    
+    <footer class="footer">
+        <p>SY AIML Semester Project-II </p>
+        <br>
+        <p>Team Members : Tanisha Badgujar, Sakshi Patil, Priyanshu Patil, Chetan Sonawane</p>
+    </footer>
+</body>
+</html>
