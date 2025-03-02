@@ -31,3 +31,8 @@ It is built using **Flask**, **TextBlob**, and the **YouTube Data API**, providi
 
 
 ## Screenshots
+
+### Phase- I
+![Home Page](image.png)
+
+![Result Page](image-1.png)
