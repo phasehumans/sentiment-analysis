@@ -1,4 +1,4 @@
-# **Sememster Project-II : YouTube Comment Sentiment Analysis**  
+# **Semester Project-II: YouTube Comment Sentiment Analysis**
 
 ## **Project Overview**  
 This project is a **YouTube Comment Sentiment Analysis System** that extracts comments from a given YouTube video and classifies them into three sentiment categories:  
@@ -6,17 +6,32 @@ This project is a **YouTube Comment Sentiment Analysis System** that extracts co
 - **Negative**  
 - **Neutral**  
 
-It is built using **Flask**, **TextBlob**, and the **YouTube Data API**, providing a simple web-based interface to analyze audience reactions.  
-
-
+It is built using **Flask**, **Machine Learning**, and the **YouTube Data API**, providing a simple web-based interface to analyze audience reactions.
 
 ## **Features**  
 - Extracts comments from any **YouTube video** using its URL.  
-- Performs **sentiment analysis** (Positive, Negative, Neutral) using **TextBlob**.  
+- Performs **sentiment analysis** (Positive, Negative, Neutral) using a **Machine Learning model**.  
 - Displays **sentiment distribution** in a graphical format.  
 - Provides a **user-friendly web interface** built with Flask.  
-- Supports **real-time analysis** for better insights.  
 
+## **Phases of the Project**
+1. **Data Collection**   
+   - Using a pre-labeled dataset (**CSV file**)  
+
+2. **Data Processing**  
+   - Removing URLs, special characters, and emojis  
+   - Converting text to lowercase for consistency  
+   - Removing stopwords to improve model accuracy  
+   - Tokenization to split text into meaningful units  
+   - Lemmatization / Stemming to get the root form of words  
+
+3. **Feature Extraction**  
+   
+4. **Model Training**  
+  
+5. **Web Application Development**  
+
+6. **Deployment**  
 
 
 ## **Technologies Used**  
@@ -25,16 +40,10 @@ It is built using **Flask**, **TextBlob**, and the **YouTube Data API**, providi
 | **Python** | Core programming language |
 | **Flask** | Web framework for UI & API |
 | **YouTube Data API** | Fetching comments from YouTube videos |
-| **TextBlob** | Sentiment analysis library |
+| **Scikit-learn** | Machine learning model for sentiment analysis |
+| **NLTK & Text Processing** | Preprocessing text data |
+| **Pandas & NumPy** | Data manipulation and processing |
 | **HTML, CSS, Bootstrap** | Frontend design |
 
 
-
-## Screenshots
-
-### Phase- I
-![image](https://github.com/user-attachments/assets/5fd37c2a-ae5f-4d5e-a5e9-ec9966d625a8)
-
-![image](https://github.com/user-attachments/assets/8c858b44-01da-4611-89df-d1b7b0d6c282)
-
-
+## **Screenshots**
