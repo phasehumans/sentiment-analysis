@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.big-heading {
+    text-align: center;
+    padding: 40px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.big-heading h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background: #ffffff;
+    margin: 20px auto;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 16px rgba(52, 51, 51, 0.1);
+}
+
+.container input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9; 
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+.container input[type="text"]:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+.container button {
+    background: #000000;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.container button:hover {
+    background: #333333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container .error {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.team-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.team-member {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #e0e0e0; 
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000; 
+}
+
+.team-member p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333333; 
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #ffffff; 
+    border-top: 1px solid #e0e0e0; 
+    color: #666666; 
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.analyze-button {
+    background: #000000;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.analyze-button:hover {
+    background: #333333;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
