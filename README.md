@@ -15,8 +15,7 @@ It is built using **Flask**, **Machine Learning**, and the **YouTube Data API**,
 - Provides a **user-friendly web interface** built with Flask.  
 
 ## **Phases of the Project**
-1. **Data Collection**  
-   - Fetching YouTube comments using the **YouTube Data API**  
+1. **Data Collection**   
    - Using a pre-labeled dataset (**CSV file**)  
 
 2. **Data Processing**  
