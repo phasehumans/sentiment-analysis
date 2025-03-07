@@ -39,20 +39,9 @@ Advanced NLP techniques use deep learning models like:
 **Limitations:**  
 - Computationally expensive and requires **large datasets**.  
 - Training models like BERT require **high-end GPUs and significant processing power**.  
+ 
 
-## **2. Existing Research and Findings**  
-Several studies have explored sentiment analysis on YouTube comments:  
-- **Sharma et al. (2022)** found that **Naïve Bayes and SVM** achieved **85% accuracy** on sentiment classification.  
-- **Gupta et al. (2021)** highlighted that rule-based methods (TextBlob, VADER) were **fast but struggled with slang and sarcasm**.  
-- **Ramesh et al. (2023)** showed that **BERT-based sentiment models achieved 90% accuracy** but required **large-scale training data**.  
-
-### **Hybrid Approach Studies**  
-- **Patil et al. (2023)** proposed a **hybrid model** combining lexicon-based and machine learning approaches, achieving a balance between efficiency and accuracy.  
-- **Kumar et al. (2024)** demonstrated that **TF-IDF with Logistic Regression** provided **better interpretability and faster processing** than deep learning models for small datasets.  
-
-These findings suggest that **machine learning-based sentiment analysis** offers a good balance between **accuracy and computational efficiency** for medium-scale projects like this one.  
-
-## **3. Why Machine Learning for This Project?**  
+## **2. Why Machine Learning for This Project?**  
 Based on the literature review, this project adopts a **Machine Learning-based approach** for sentiment analysis due to:  
 - **Higher Accuracy** – ML models perform better than rule-based methods in complex sentence structures.  
 - **Improved Generalization** – Trained models adapt to new datasets better than static word dictionaries.  
