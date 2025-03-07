@@ -13,7 +13,27 @@ It is built using **Flask**, **Machine Learning**, and the **YouTube Data API**,
 - Performs **sentiment analysis** (Positive, Negative, Neutral) using a **Machine Learning model**.  
 - Displays **sentiment distribution** in a graphical format.  
 - Provides a **user-friendly web interface** built with Flask.  
-- Supports **real-time analysis** for better insights.  
+
+## **Phases of the Project**
+1. **Data Collection**  
+   - Fetching YouTube comments using the **YouTube Data API**  
+   - Using a pre-labeled dataset (**CSV file**)  
+
+2. **Data Processing**  
+   - Removing URLs, special characters, and emojis  
+   - Converting text to lowercase for consistency  
+   - Removing stopwords to improve model accuracy  
+   - Tokenization to split text into meaningful units  
+   - Lemmatization / Stemming to get the root form of words  
+
+3. **Feature Extraction**  
+   
+4. **Model Training**  
+  
+5. **Web Application Development**  
+
+6. **Deployment**  
+
 
 ## **Technologies Used**  
 | Technology | Purpose |
@@ -25,5 +45,6 @@ It is built using **Flask**, **Machine Learning**, and the **YouTube Data API**,
 | **NLTK & Text Processing** | Preprocessing text data |
 | **Pandas & NumPy** | Data manipulation and processing |
 | **HTML, CSS, Bootstrap** | Frontend design |
+
 
 ## **Screenshots**
