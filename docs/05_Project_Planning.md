@@ -63,12 +63,16 @@ The project follows a structured, step-by-step approach to implement a sentiment
 - **VS Code / PyCharm** – Code editors
 - **Postman** – API testing
 - **GitHub** – For version control
-- **Render / Heroku (Optional)** – Deployment platforms for web hosting
+- **Render** – Deployment platforms for web hosting
 
 ---
 
 ## **Workflow Summary**
-1. Data Collection → 2. Cleaning & Preprocessing → 3. TF-IDF Transformation →  
-4. Model Training (Naïve Bayes) → 5. Model Saving →  
-6. Web App Integration (Flask) → 7. Real-time Sentiment Prediction
+1. Data Collection → 
+2. Cleaning & Preprocessing → 
+3. TF-IDF Transformation →  
+4. Model Training (Naïve Bayes) → 
+5. Model Saving →  
+6. Web App Integration (Flask) → 
+7. Real-time Sentiment Prediction
 
