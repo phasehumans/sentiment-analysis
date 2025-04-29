@@ -75,4 +75,3 @@ The project follows a structured, step-by-step approach to implement a sentiment
 5. Model Saving →  
 6. Web App Integration (Flask) → 
 7. Real-time Sentiment Prediction
-
