@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="logo">Analysis Results</h1>
+        </div>
+        
+        {% if results %}
+            <div class="video-info">
+                <p>Analyzed comments from: <a href="{{ results.video_url }}" target="_blank">{{ results.video_url }}</a></p>
+                <p>Total comments analyzed: <strong>{{ results.total }}</strong></p>
+            </div>
+            
+            <div class="results-container">
+                <div class="stat-box positive">
+                    <div class="stat-label">Positive</div>
+                    <div class="stat-value">{{ results.positive }}</div>
+                    <div class="stat-percent">{{ results.positive_pct }}%</div>
+                </div>
+                <div class="stat-box negative">
+                    <div class="stat-label">Negative</div>
+                    <div class="stat-value">{{ results.negative }}</div>
+                    <div class="stat-percent">{{ results.negative_pct }}%</div>
+                </div>
+                <div class="stat-box neutral">
+                    <div class="stat-label">Neutral</div>
+                    <div class="stat-value">{{ results.neutral }}</div>
+                    <div class="stat-percent">{{ results.neutral_pct }}%</div>
+                </div>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="sentimentChart"></canvas>
+            </div>
+        {% else %}
+            <div class="error">
+                <p>No results available. Please try analyzing again.</p>
+            </div>
+        {% endif %}
+        
+        <a href="/" class="back-link">Analyze Another Video</a>
+    </div>
+
+    {% if results %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('sentimentChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Positive', 'Negative', 'Neutral'],
+                    datasets: [{
+                        data: [
+                            {{ results.positive_pct|default(0) }}, 
+                            {{ results.negative_pct|default(0) }}, 
+                            {{ results.neutral_pct|default(0) }}
+                        ],
+                        backgroundColor: [
+                            '#4CAF50', // Green
+                            '#f44336', // Red
+                            '#2196F3'  // Blue
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    {% endif %}
+</body>
+</html>

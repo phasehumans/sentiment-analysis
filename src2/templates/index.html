@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="logo">YouTube Sentiment Analyzer</h1>
+            <p class="tagline">Discover what people are saying about any YouTube video</p>
+        </div>
+        
+        <form id="analysisForm" action="/analyze" method="POST">
+            <div class="form-group">
+                <label for="video_url">Enter YouTube Video URL:</label>
+                <input type="text" id="video_url" name="video_url" placeholder="https://www.youtube.com/watch?v=..." required>
+            </div>
+            <button type="submit" id="analyzeBtn">Analyze Comments</button>
+        </form>
+        
+        {% if error %}
+        <div class="error" id="errorMessage">{{ error }}</div>
+        {% endif %}
+        
+        <div class="examples">
+            <h3>Examples of valid YouTube URLs:</h3>
+            <ul>
+                <li>https://www.youtube.com/watch?v=dQw4w9WgXcQ</li>
+                <li>https://youtu.be/dQw4w9WgXcQ</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
