@@ -44,5 +44,5 @@ This system is beneficial for **content creators, brands, and researchers** to a
 ## **Team Members:**  
 - **Sakshi Dadabhau Patil** SYAIML-06 (231107004)  
 - **Tanisha Chudaman Badgujar** SYAIML-26 (231107027)  
-- **Priyanshu Dipak Patil** SIAIML-62 (241207003)  
+- **Priyanshu Dipak Patil** SYAIML-62 (241207003)  
 - **Chetan Prabhakar Sonawane** SYAIML-40 (231107042)  
