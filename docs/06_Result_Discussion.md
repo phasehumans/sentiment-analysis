@@ -7,10 +7,8 @@
 After training the **Naïve Bayes classifier** on the preprocessed YouTube comments dataset, the model showed the following results:
 
 ### **Evaluation Metrics**
-- **Accuracy:** 84%
-- **Precision (Positive class):** 82%
-- **Recall (Negative class):** 80%
-- **F1-Score:** 81%
+- **Accuracy:** 73%
+
 
 These metrics indicate that the model is performing well on short, informal YouTube comment text.
 
@@ -40,13 +38,6 @@ The system was tested on real YouTube videos from various categories:
   - Negative: 15%
   - Neutral: 25%
 - Insight: More engagement in terms of neutral and positive sentiments.
-
----
-
-## **3. Visualization of Results**
-- Pie charts were used to show sentiment distribution for each video.
-- Bar graphs were used to compare sentiments across different video types.
-- These visuals helped clearly communicate the dominant audience sentiment.
 
 ---
 
