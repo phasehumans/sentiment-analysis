@@ -9,12 +9,12 @@
 - **Machine Learning-based sentiment classification** instead of rule-based TextBlob  
 - Text preprocessing (Cleaning, Tokenization, Stopword Removal, Lemmatization)  
 - Feature Extraction using TF-IDF  
-- Training a classification model (Logistic Regression)  
+- Training a classification model (Naive Bayes)  
 
 ## **Abstract**  
 The **YouTube Comment Sentiment Analysis System** is a web-based application that extracts comments from YouTube videos and classifies them into **Positive, Negative, or Neutral** sentiments using **Machine Learning**. The system leverages the **YouTube Data API** to fetch comments and applies **Natural Language Processing (NLP) techniques** to clean and preprocess the text.  
 
-Instead of a rule-based approach like TextBlob, this project implements a **trained Machine Learning model** to enhance accuracy and generalizability. It applies **TF-IDF vectorization** to convert text into numerical representations and utilizes a **classification algorithm** Logistic Regression to predict sentiment labels.  
+Instead of a rule-based approach like TextBlob, this project implements a **trained Machine Learning model** to enhance accuracy and generalizability. It applies **TF-IDF vectorization** to convert text into numerical representations and utilizes a **classification algorithm** Naive Bayes to predict sentiment labels.  
 
 This system is beneficial for **content creators, brands, and researchers** to assess public opinion on videos, identify trends, and make data-driven decisions.
 
@@ -32,7 +32,7 @@ This system is beneficial for **content creators, brands, and researchers** to a
    - Convert text into numerical form using **TF-IDF vectorization**  
 
 4. **Model Training & Evaluation**  
-   - Train a **classification model** Logistic Regression 
+   - Train a **classification model** (Naive Bayes)
 
 5. **Web Application Development**  
    - Build a **Flask-based UI** for user interaction  

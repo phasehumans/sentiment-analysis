@@ -23,11 +23,3 @@ The data was sourced from open platforms like Kaggle or collected via the YouTub
 - Decide on appropriate **feature extraction techniques**
 
 ---
-
-## 3. Observations from EDA
-
-### a. Sentiment Class Distribution
-
-Using a bar chart, we visualized how many comments belong to each sentiment class.
-
-Example observation:
