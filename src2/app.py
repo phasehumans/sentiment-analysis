@@ -7,10 +7,10 @@ from googleapiclient.errors import HttpError
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
-#from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 
-#load_dotenv()
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -20,7 +20,7 @@ nltk.download('wordnet')
 lemmatizer = WordNetLemmatizer()
 
 # YouTube API configuration
-API_KEY = 'AIzaSyAp_LR5a8jtxxmFS0ICi_TaG_--gFRH0Xg' 
+API_KEY = os.getenv("YOUTUBE_API_KEY")
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v3'
 
