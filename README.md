@@ -61,3 +61,12 @@ It is built using **Flask**, **Machine Learning**, and the **YouTube Data API**,
 
 
 ## **Screenshots**
+<img width="1906" height="1024" alt="image" src="https://github.com/user-attachments/assets/51eabeb0-2b31-4922-b348-2edc4217b998" />
+<img width="1908" height="964" alt="image" src="https://github.com/user-attachments/assets/8c1a2216-bfaf-4af0-ae39-3186a8464719" />
+<img width="1914" height="966" alt="image" src="https://github.com/user-attachments/assets/5be294cb-9a96-4680-b338-045f6a1a38f5" />
+<img width="1919" height="1021" alt="image" src="https://github.com/user-attachments/assets/ac60782b-82ed-4ca4-b28e-eb20722d1e3b" />
+
+
+
+
+
