@@ -26,12 +26,26 @@ It is built using **Flask**, **Machine Learning**, and the **YouTube Data API**,
    - Lemmatization / Stemming to get the root form of words  
 
 3. **Feature Extraction**  
+- Used TF-IDF Vectorizer to convert textual data into numerical form.
+- Captures important keywords while reducing the impact of common words.
+- Produces a sparse matrix representation used for training the ML model.
    
 4. **Model Training**  
+- Trained a Multinomial Naive Bayes classifier on the preprocessed data
+- Achieved reliable accuracy on test data
   
 5. **Web Application Development**  
+- Users input YouTube video URL
+- Backend fetches top comments using YouTube Data API
+- Preprocesses and vectorizes comments
+- Predicts sentiment for each comment
+- Displays result as:
+   - Text list with sentiment tags
+   - Pie chart for sentiment distribution
 
 6. **Deployment**  
+- Can be run locally via Flask
+- Ready for deployment to platforms like Heroku, Render, or Streamlit Cloud
 
 
 ## **Technologies Used**  
